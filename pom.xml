@@ -10,13 +10,12 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>propertymanager</artifactId>
+	<artifactId>userservice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>propertymanager</name>
-	<description>propertymanager project for Spring Boot</description>
+	<name>userservice</name>
+	<description>userservice project for Spring Boot</description>
 	<url />
 	<licenses>
-		<license />
 	</licenses>
 	<developers>
 		<developer />
