@@ -44,7 +44,7 @@ public class Property {
 
 	private String owner;
 
-	// Getters and setters
+	// Getters and setters not needed
 
 	public enum PropertyType {
 		RESIDENTIAL, COMMERCIAL
