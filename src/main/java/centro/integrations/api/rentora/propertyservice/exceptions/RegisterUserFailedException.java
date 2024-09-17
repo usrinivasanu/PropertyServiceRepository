@@ -1,4 +1,4 @@
-package centro.integrations.api.rentora.userservice.exceptions;
+package centro.integrations.api.rentora.propertyservice.exceptions;
 
 public class RegisterUserFailedException extends Exception {
 	public RegisterUserFailedException(String message) {

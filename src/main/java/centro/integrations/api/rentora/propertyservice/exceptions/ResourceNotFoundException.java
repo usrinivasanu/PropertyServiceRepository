@@ -1,4 +1,4 @@
-package centro.integrations.api.rentora.userservice.exceptions;
+package centro.integrations.api.rentora.propertyservice.exceptions;
 
 public class ResourceNotFoundException extends RuntimeException {
 	public ResourceNotFoundException(String message) {

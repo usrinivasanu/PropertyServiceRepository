@@ -1,4 +1,4 @@
-package centro.integrations.api.rentora.userservice.util;
+package centro.integrations.api.rentora.propertyservice.util;
 
 public class ErrorResponse {
 	public String getMessage() {

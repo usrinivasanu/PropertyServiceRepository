@@ -1,4 +1,4 @@
-package centro.integrations.api.rentora.userservice.beans;
+package centro.integrations.api.rentora.propertyservice.beans;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -14,9 +14,11 @@ public class SecurityConfig {
 
 	@Bean
 	public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-		http.csrf().disable().authorizeHttpRequests(
-				authorize -> authorize.requestMatchers("/api/users/**").permitAll().anyRequest().authenticated())
-				.httpBasic();
+		http.csrf().disable().authorizeHttpRequests(authorize -> authorize.requestMatchers("/api/units/**").permitAll() // Existing
+																														// allowed
+																														// endpoints
+				.requestMatchers("/api/properties/**").permitAll() // New allowed endpoints
+				.anyRequest().authenticated()).httpBasic();
 		return http.build();
 	}
 

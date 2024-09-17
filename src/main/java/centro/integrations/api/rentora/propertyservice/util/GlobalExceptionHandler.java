@@ -1,4 +1,4 @@
-package centro.integrations.api.rentora.userservice.util;
+package centro.integrations.api.rentora.propertyservice.util;
 
 import java.util.Map;
 import java.util.NoSuchElementException;
@@ -16,7 +16,7 @@ import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
 import org.springframework.web.servlet.NoHandlerFoundException;
 
-import centro.integrations.api.rentora.userservice.exceptions.RegisterUserFailedException;
+import centro.integrations.api.rentora.propertyservice.exceptions.RegisterUserFailedException;
 import jakarta.persistence.EntityNotFoundException;
 
 @RestControllerAdvice
