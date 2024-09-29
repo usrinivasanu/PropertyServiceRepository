@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import centro.integrations.api.rentora.propertyservice.dtos.PropertyUpdateDTO;
 import centro.integrations.api.rentora.propertyservice.entities.Property;
 import centro.integrations.api.rentora.propertyservice.services.PropertyService;
 
@@ -75,9 +76,9 @@ public class PropertyController {
 	}
 
 	@PutMapping("/{id}")
-	public ResponseEntity<?> updateProperty(@PathVariable Long id, @RequestBody Property property) {
+	public ResponseEntity<?> updateProperty(@PathVariable Long id, @RequestBody PropertyUpdateDTO propertyUpdateDTO) {
 		try {
-			Property updatedProperty = propertyService.updateProperty(id, property);
+			Property updatedProperty = propertyService.updateProperty(id, propertyUpdateDTO);
 			if (updatedProperty != null) {
 				return ResponseEntity.ok(updatedProperty);
 			} else {
